@@ -157,7 +157,7 @@ rebuild_firmware() {
     echo -e "${STEPS} Start building OpenWrt with Image Builder..."
     # Selecting default packages, lib, theme, app and i18n, etc.
     my_packages="\
-        bash perl-http-date perlbase-getopt perlbase-time perlbase-unicode perlbase-utf8 blkid fdisk \
+        -dnsmasq dnsmasq-full bash perl-http-date perlbase-getopt perlbase-time perlbase-unicode perlbase-utf8 blkid fdisk \
         lsblk parted attr btrfs-progs chattr dosfstools e2fsprogs f2fs-tools f2fsck lsattr mkf2fs \
         xfs-fsck xfs-mkfs bash gawk getopt losetup pv uuidgen coremark coreutils uclient-fetch wwan \
         coreutils-base64 coreutils-nohup kmod-brcmfmac kmod-brcmutil kmod-cfg80211 kmod-mac80211 \
@@ -166,7 +166,7 @@ rebuild_firmware() {
         ziptool zstd iconv jq docker docker-compose dockerd containerd dumpe2fs e2freefrag exfat-mkfs \
         resize2fs tune2fs ttyd zoneinfo-asia zoneinfo-core bc iwinfo jshn libjson-script libnetwork \
         openssl-util rename runc which liblucihttp bsdtar pigz gzip bzip2 unzip xz-utils xz tar \
-        liblucihttp-lua ppp ppp-mod-pppoe proto-bonding cgi-io uhttpd uhttpd-mod-ubus comgt comgt-ncm uqmi \
+        liblucihttp-lua ppp ppp-mod-pppoe proto-bonding cgi-io uhttpd uhttpd-mod-ubus comgt comgt-ncm uqmi kmod-usb-net-rndis \
         \
         luci luci-base luci-lib-base luci-i18n-base-en luci-i18n-base-zh-cn luci-lib-ipkg luci-lib-docker \
         luci-lib-ip luci-lib-jsonc luci-lib-nixio luci-mod-network luci-mod-status luci-mod-system \
